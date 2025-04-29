@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Hacker - Pakistani SIM Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    
+    <div class="watermark">Created by Shahzaib Gondal</div>
+    
+    <div class="container">
+        <header>
+            <h1 class="cyberpunk-text">KING <span>HACKER</span></h1>
+            <p class="tagline">PAKISTANI SIM INFORMATION SYSTEM</p>
+        </header>
+
+        <div class="search-box">
+            <div class="input-group">
+                <input type="text" id="numberInput" placeholder="Enter Pakistani number (e.g. 03001234567)" maxlength="11">
+                <button id="searchBtn" class="glowing-btn">
+                    <i class="fas fa-bolt"></i> TRACE NOW
+                </button>
+            </div>
+            <div class="validation-message" id="validationMessage"></div>
+        </div>
+
+        <div class="loader" id="loader">
+            <div class="scanning-animation">
+                <div class="scan-line"></div>
+            </div>
+            <p>SCANNING DATABASE...</p>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <div class="result-header">
+                <h2>TARGET INFORMATION</h2>
+                <div class="result-actions">
+                    <button id="clearBtn"><i class="fas fa-skull-crossbones"></i> CLEAR</button>
+                    <button id="shareBtn"><i class="fab fa-whatsapp"></i> SHARE</button>
+                </div>
+            </div>
+            <div class="result-content" id="resultContent">
+                <!-- Results will be displayed here -->
+            </div>
+            <div class="network-logo" id="networkLogo">
+                <!-- Network logo will appear here -->
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3>CONTACT KING HACKER</h3>
+            <div class="contact-links">
+                <a href="https://chat.whatsapp.com/BaLBViDOKc88e6qEakdl6y" target="_blank" class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> JOIN OUR GROUP
+                </a>
+                <a href="tel:03301345700" class="contact-btn phone">
+                    <i class="fas fa-phone-alt"></i> CALL NOW: 03301345700
+                </a>
+            </div>
+            <div class="work-offer">
+                <p>INTERESTED IN ONLINE WORK? CONTACT US ON WHATSAPP!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 KING HACKER | Created by Shahzaib Gondal | All Rights Reserved</p>
+        <p>This tool is for educational purposes only</p>
+    </footer>
+
+    <audio id="searchSound" src="https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-robot-notification-281.mp3"></audio>
+    <audio id="resultSound" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
